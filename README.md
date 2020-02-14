@@ -5,23 +5,21 @@
 The idea of this repository is to help people generate and test custom datasets for the VOC format in order to be able train Object Detection models.
 
 ## Usage of gt2voc script
-to help in the creation of the dataset a script was made to convert a ground truth with the format below (named `dataset_gt.gt`)
+1. Create a file named `dataset_gt.gt` using the format below:
+    `name_of_image x0 y0 x1 y1 class_name`
+2. then just run the `gt2voc.py` script following the instructions below:
 
-`name_of_image x0 y0 x1 y1 class_name`
-
-to the VOC format that has an xml to each image.
-
-* The position is in percent of the image
-* the name of the image is without te extension (.jpg,.png)
-
-To run the script it needs to have installed `opencv-python` and `xml`.
-
-after that just run:
 ```
 cd scripts
 python gt2voc.py path/to/image/folder/ path/to/image/folder2/ path/to/output/folder/
 ```
-* the dataset_gt.gt file needs to be inside the output folder
+* the dataset_gt.gt file needs to be inside the output folder.
+* The position is in percent of the image (eg: `person1 0.2 0.1 0.4 0.5 person`)
+* the name of the image is without te extension (.jpg,.png)
+
+To run the script it needs to have installed `opencv-python` and `xml`.
+
+
 
 ## Additional scripts
 
