@@ -15,11 +15,9 @@ python gt2voc.py path/to/image/folder/ path/to/image/folder2/ path/to/output/fol
 ```
 * the dataset_gt.gt file needs to be inside the output folder.
 * The position is in percent of the image (eg: `person1 0.2 0.1 0.4 0.5 person`)
-* the name of the image is without te extension (.jpg,.png)
+* the name of the image is without the extension (.jpg,.png)
 
 To run the script it needs to have installed `opencv-python` and `xml`.
-
-
 
 ## Additional scripts
 
