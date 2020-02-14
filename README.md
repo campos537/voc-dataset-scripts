@@ -34,5 +34,5 @@ python check_xml.py xml_directory images_directory
 The `count_objects_xml.py` helps to count how many objects each class has for the specific text file with the annotations in order to help generating the test.txt file.
 ```
 cd scripts
-python check_xml.py text_file
+python count_objects_xml.py text_file
 ```

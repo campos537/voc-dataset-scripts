@@ -33,6 +33,6 @@ def main(text_file):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("usage: python check_xml.py text_file")
+        print("usage: python count_objects_xml.py text_file")
     else:
         main(sys.argv[1])
